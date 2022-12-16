@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "slimeworld",
+  "version": "${version}",
+
+  "name": "Slime World",
+  "description": "Makes every block bouncy, like slime",
+  "authors": [
+    "Thunkity"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT License",
+  "icon": "assets/slimeworld/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.thunkity.slimeworld.SlimeWorld"
+    ],
+    "client": [
+      "net.thunkity.slimeworld.SlimeWorldClient"
+    ]
+  },
+  "mixins": [
+    "slimeworld.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.11",
+    "fabric-api": "*",
+    "minecraft": "~1.19.3",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
